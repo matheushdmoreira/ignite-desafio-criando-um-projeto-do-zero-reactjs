@@ -1,0 +1,63 @@
+.posts {
+  padding-bottom: 5rem;
+  article {
+    cursor: pointer;
+
+    a {
+      display: block;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 1.75rem;
+      color: var(--heading);
+      transition: color 0.2s;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      font-size: 1.125rem;
+    }
+
+    & + article {
+      margin-top: 3rem;
+    }
+
+    &:hover h2 {
+      color: var(--highlight);
+    }
+
+    .postContent {
+      display: flex;
+      align-items: center;
+      margin-top: 1.5rem;
+
+      span {
+        display: flex;
+        align-items: center;
+
+        & + span {
+          margin-left: 1.625rem;
+        }
+
+        svg {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  button {
+    border: none;
+    background: transparent;
+    margin-top: 4rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--highlight);
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}
